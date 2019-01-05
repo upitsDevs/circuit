@@ -29922,6 +29922,13 @@ distributor Schukat</description>
 <part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="480"/>
 <part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="480"/>
 <part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="480"/>
+<part name="VT5" library="transistor-npn" deviceset="MMBT3904*" device="" technology="LT1"/>
+<part name="LOCK" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
+<part name="D11" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="-FKIT-1206" package3d_urn="urn:adsk.eagle:package:39355/1" value="3mm"/>
+<part name="PWR-5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="1k">
+<attribute name="PWR-2" value="PWR-2"/>
+</part>
+<part name="R23" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/1" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -30196,6 +30203,31 @@ distributor Schukat</description>
 <attribute name="NAME" x="107.95" y="120.4214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="107.95" y="125.222" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="VT5" gate="G$1" x="0" y="-104.14" smashed="yes" rot="R270">
+<attribute name="NAME" x="2" y="-117.68" size="1.524" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-0.19" y="-117.68" size="1.524" layer="96" rot="R270"/>
+</instance>
+<instance part="LOCK" gate="-1" x="27.94" y="-134.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="27.051" y="-137.668" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="31.877" y="-134.62" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="LOCK" gate="-2" x="22.86" y="-134.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.971" y="-137.668" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="16.637" y="-134.62" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="D11" gate="G$1" x="15.24" y="-78.74" smashed="yes">
+<attribute name="NAME" x="11.811" y="-83.312" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="17.145" y="-83.312" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+</instance>
+<instance part="PWR-5" gate="G$1" x="15.24" y="-93.98" smashed="yes" rot="R270">
+<attribute name="NAME" x="16.7386" y="-90.17" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="11.938" y="-90.17" size="1.778" layer="96" rot="R270"/>
+<attribute name="PWR-2" x="15.24" y="-93.98" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R23" gate="G$1" x="0" y="-91.44" smashed="yes" rot="R270">
+<attribute name="NAME" x="1.4986" y="-87.63" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-3.302" y="-87.63" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -30238,6 +30270,11 @@ distributor Schukat</description>
 <wire x1="-134.62" y1="25.4" x2="-132.08" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-132.08" y1="25.4" x2="-132.08" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-132.08" y="30.48"/>
+</segment>
+<segment>
+<pinref part="LOCK" gate="-1" pin="KL"/>
+<wire x1="27.94" y1="-132.08" x2="27.94" y2="-116.84" width="0.1524" layer="91"/>
+<label x="27.94" y="-116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -30441,6 +30478,11 @@ distributor Schukat</description>
 <wire x1="147.32" y1="124.46" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
 <label x="149.86" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="VT5" gate="G$1" pin="E"/>
+<wire x1="-2.54" y1="-106.68" x2="-7.62" y2="-106.68" width="0.1524" layer="91"/>
+<label x="-7.62" y="-106.68" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="5V0" class="0">
 <segment>
@@ -30501,6 +30543,11 @@ distributor Schukat</description>
 <pinref part="5V0" gate="G$1" pin="PP"/>
 <wire x1="-111.76" y1="99.06" x2="-111.76" y2="96.52" width="0.1524" layer="91"/>
 <label x="-111.76" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="D11" gate="G$1" pin="A"/>
+<wire x1="15.24" y1="-76.2" x2="15.24" y2="-71.12" width="0.1524" layer="91"/>
+<label x="15.24" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -31092,6 +31139,44 @@ distributor Schukat</description>
 <wire x1="111.76" y1="121.92" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="D10" gate="G$1" pin="RED-A"/>
 <wire x1="111.76" y1="124.46" x2="116.84" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DOOR1" class="0">
+<segment>
+<pinref part="LOCK" gate="-2" pin="KL"/>
+<pinref part="VT5" gate="G$1" pin="C"/>
+<wire x1="22.86" y1="-132.08" x2="22.86" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-106.68" x2="15.24" y2="-106.68" width="0.1524" layer="91"/>
+<pinref part="PWR-5" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="-106.68" x2="2.54" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-99.06" x2="15.24" y2="-106.68" width="0.1524" layer="91"/>
+<junction x="15.24" y="-106.68"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="D11" gate="G$1" pin="C"/>
+<pinref part="PWR-5" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="-83.82" x2="15.24" y2="-88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="VT5" gate="G$1" pin="B"/>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="0" y1="-101.6" x2="0" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LOCK-SIGNAL" class="0">
+<segment>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="0" y1="-86.36" x2="0" y2="-81.28" width="0.1524" layer="91"/>
+<label x="0" y="-81.28" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="(PCI11/ADC3)PC3"/>
+<wire x1="121.92" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
+<label x="127" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

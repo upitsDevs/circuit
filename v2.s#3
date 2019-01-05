@@ -29514,6 +29514,101 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="heatsink" urn="urn:adsk.eagle:library:236">
+<description>&lt;b&gt;Heatsinks&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="D02PA-PAD" urn="urn:adsk.eagle:footprint:14138/1" library_version="1">
+<description>&lt;b&gt;HEATSINK&lt;/b&gt;&lt;p&gt;
+distributor Schukat</description>
+<wire x1="6.858" y1="8.128" x2="5.588" y2="8.128" width="0.1524" layer="21"/>
+<wire x1="-6.858" y1="8.128" x2="-5.588" y2="8.128" width="0.1524" layer="21"/>
+<wire x1="6.858" y1="0.254" x2="6.858" y2="8.128" width="0.1524" layer="21"/>
+<wire x1="5.588" y1="0.254" x2="5.588" y2="8.128" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="0.254" x2="-5.588" y2="8.128" width="0.1524" layer="21"/>
+<wire x1="-6.858" y1="0.254" x2="-6.858" y2="8.128" width="0.1524" layer="21"/>
+<wire x1="5.334" y1="0" x2="5.588" y2="0.254" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.588" y1="0.254" x2="-5.334" y2="0" width="0.1524" layer="21" curve="90"/>
+<wire x1="-6.858" y1="0.254" x2="-5.334" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="5.334" y1="-1.27" x2="6.858" y2="0.254" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.397" y1="-1.27" x2="-1.397" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-5.334" y1="0" x2="-1.016" y2="0" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="0" x2="1.016" y2="0" width="0.1524" layer="51"/>
+<wire x1="1.016" y1="0" x2="5.334" y2="0" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="-2.794" x2="2.794" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-2.286" y1="-3.302" x2="-0.381" y2="-3.302" width="0.1524" layer="51"/>
+<wire x1="-0.381" y1="-2.54" x2="-0.381" y2="-3.302" width="0.1524" layer="51"/>
+<wire x1="-0.381" y1="-2.54" x2="0.381" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="0.381" y1="-3.302" x2="0.381" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="2.286" y1="-3.302" x2="0.381" y2="-3.302" width="0.1524" layer="51"/>
+<wire x1="-2.794" y1="-2.794" x2="-2.794" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="1.397" y1="-1.27" x2="5.334" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="-1.27" x2="-5.334" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.794" y1="-2.794" x2="-2.286" y2="-3.302" width="0.1524" layer="51" curve="90"/>
+<wire x1="2.286" y1="-3.302" x2="2.795" y2="-2.8049" width="0.1524" layer="51" curve="101.307265"/>
+<pad name="B" x="0" y="-1.016" drill="1.8034" diameter="2.54"/>
+<text x="-7.62" y="0" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="8.89" y="0" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-3.683" y1="-1.778" x2="-1.397" y2="-1.27" layer="21"/>
+<rectangle x1="1.397" y1="-1.778" x2="3.683" y2="-1.27" layer="21"/>
+<rectangle x1="-1.397" y1="-1.778" x2="1.397" y2="-1.27" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="D02PA-PAD" urn="urn:adsk.eagle:package:14173/1" type="box" library_version="1">
+<description>HEATSINK
+distributor Schukat</description>
+<packageinstances>
+<packageinstance name="D02PA-PAD"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="KK-1" urn="urn:adsk.eagle:symbol:14137/1" library_version="1">
+<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="4.445" y2="5.08" width="0.254" layer="94"/>
+<wire x1="4.445" y1="5.08" x2="4.445" y2="1.27" width="0.254" layer="94"/>
+<wire x1="4.445" y1="1.27" x2="3.175" y2="1.27" width="0.254" layer="94"/>
+<wire x1="3.175" y1="1.27" x2="3.175" y2="5.08" width="0.254" layer="94"/>
+<wire x1="3.175" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-3.175" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="5.08" x2="-3.175" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="1.27" x2="-4.445" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="1.27" x2="-4.445" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<text x="5.715" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.715" y="0.635" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="K@1" x="-5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="D02P-PAD" urn="urn:adsk.eagle:component:14204/1" prefix="KK" library_version="1">
+<description>&lt;b&gt;HEATSINK&lt;/b&gt;&lt;p&gt;
+distributor Schukat</description>
+<gates>
+<gate name="G$1" symbol="KK-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="D02PA-PAD">
+<connects>
+<connect gate="G$1" pin="K@1" pad="B"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14173/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -29622,6 +29717,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPS" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
 <part name="5V0" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPS" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
 <part name="3V3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPS" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
+<part name="KK1" library="heatsink" library_urn="urn:adsk.eagle:library:236" deviceset="D02P-PAD" device="" package3d_urn="urn:adsk.eagle:package:14173/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -29876,6 +29972,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="NAME" x="-120.65" y="102.87" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="-118.11" y="100.33" size="1.778" layer="97"/>
 </instance>
+<instance part="KK1" gate="G$1" x="-124.46" y="-10.16" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-130.175" y="-6.985" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="-130.175" y="-9.525" size="1.778" layer="96" rot="MR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -30100,6 +30200,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="GND" gate="G$1" pin="PP"/>
 <wire x1="-104.14" y1="99.06" x2="-104.14" y2="96.52" width="0.1524" layer="91"/>
 <label x="-104.14" y="96.52" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="KK1" gate="G$1" pin="K@1"/>
+<wire x1="-119.38" y1="-12.7" x2="-116.84" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-116.84" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V0" class="0">

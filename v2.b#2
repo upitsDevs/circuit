@@ -178,6 +178,8 @@
 <wire x1="0" y1="101.6" x2="0" y2="-0.8" width="0" layer="20"/>
 <dimension x1="110.4" y1="-0.8" x2="110.4" y2="101.6" x3="116" y3="50.4" textsize="1.778" layer="1" dtype="horizontal"/>
 <dimension x1="110.4" y1="101.6" x2="0" y2="101.6" x3="55.2" y3="106" textsize="1.778" layer="1" dtype="horizontal"/>
+<text x="72.4" y="24.4" size="1.778" layer="21" rot="R90">UPITSIO</text>
+<text x="70.8" y="24.4" size="1.778" layer="22" rot="MR90">UPITSIO</text>
 </plain>
 <libraries>
 <library name="con-wago-500" urn="urn:adsk.eagle:library:195">
